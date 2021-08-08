@@ -1,0 +1,811 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+    color: #16507b !important;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #16507b;
+    font-size: 17px;
+    padding: 0 17px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #2487ce;
+}
+
+.btn-header {
+    background-color: #2487ce;
+    color: #fff;
+    padding: 8px 20px;
+}
+
+.btn-header:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.hero {
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-title {
+    margin-top: 15vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 86px;
+    color: #124265;
+}
+
+.hero-content {
+    text-align: center;
+    color: #5e5e5e;
+    font-size: 25px;
+    margin: 20px 0;
+    font: 'Open Sans', sans-serif;
+}
+
+.btn-hero {
+    background: #2487ce;
+    padding: 15px 60px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: table;
+    margin: 30px auto;
+}
+
+.btn-hero:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.hero-card {
+    padding: 30px 10px;
+    border: none;
+    transition: 0.3s ease;
+    margin: 0 4px;
+    box-shadow: 0 0 29px 0 rgb(18 66 101 / 8%);
+}
+
+.hero-card i {
+    color: #2487ce;
+    font-size: 32px;
+}
+
+.hero-card .card-title {
+    font-size: 21px;
+    color: #124265;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.hero-card .card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-card:hover {
+    transform: scale(1.1);
+}
+
+.hero-card:hover .card-title {
+    color: #2487ce;
+}
+
+.contact h2,
+.faq .faq-title,
+.pricing h2,
+.service h2,
+.team h2,
+.portfolio h2,
+.testimonial h2,
+.about-us h2 {
+    font-weight: bold;
+    text-align: center;
+    color: #124265;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.contact p,
+.pricing .pricing-content,
+.faq p,
+.service p,
+.team p,
+.portfolio p,
+.testimonial .testimonial-para,
+.about-us .about-content {
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+    margin: 30px 0;
+}
+
+.about-us .row p {
+    font-size: 20px;
+    color: #444444;
+}
+
+.about-left ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.about-left ul li {
+    margin: 7px 0;
+}
+
+.about-left ul li i {
+    color: #2487ce;
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+.about-right a {
+    color: #2487ce;
+    border: 3px solid #2487ce;
+    padding: 10px 40px;
+    transition: 0.5s ease;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.about-right a:hover {
+    color: #fff;
+    background: #2487ce;
+}
+
+.counter {
+    background-color: #f8fbfe;
+}
+
+.counter span {
+    color: #124265;
+    font-size: 52px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    display: table;
+    margin: 0 auto;
+}
+
+.counter h6 {
+    color: #2487ce;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.info-left a {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: #2487ce77;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.info-left a:hover {
+    background-color: #2487ce;
+}
+
+.info-left i {
+    font-size: 25px;
+    color: #fff;
+    background-color: #2487ce;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.info-right h3 {
+    color: #124265;
+    font-weight: bold;
+}
+
+.info-right ul {
+    list-style: none;
+}
+
+.info-right {
+    font-size: 18px;
+}
+
+.info-right ul li::before {
+    content: '\f560';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 15px;
+    color: #2487ce;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.clients {
+    padding: 50px 0;
+    background-color: #f8fbfe;
+}
+
+.clients img {
+    filter: grayscale(100);
+    transition: 0.5s ease;
+    display: table;
+    margin: 10px auto;
+}
+
+.clients img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+.testimonial-body p {
+    font-style: italic;
+    padding: 20px;
+    background: #f3f9fd;
+    border-radius: 6px;
+    font-size: 19px;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 0;
+}
+
+.testimonial-body p i {
+    color: #c9e3f5;
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+.testimonial-content::after {
+    content: '\f0d7';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 50px;
+    color: #f3f9fd;
+    font-weight: 400;
+    display: table;
+    position: relative;
+    bottom: 25px;
+    margin: 0 auto;
+    font-style: normal;
+}
+
+.testimonial-body img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-body h4 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.testimonial-body h5 {
+    text-align: center;
+    font-size: 17px;
+    color: #999;
+}
+
+.service-body {
+    padding: 90px 20px 50px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.service-body .icon svg {
+    position: absolute;
+    top: 70px;
+    left: 37%;
+    transition: 0.3s ease;
+}
+
+.service-body .icon i {
+    position: relative;
+    font-size: 32px;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    transition: 0.3s ease;
+}
+
+.service-body:hover {
+    box-shadow: 0 0 29px 0 rgb(18 66 101 / 8%);
+}
+
+.service-body .icon-ball i {
+    color: #47aeff;
+}
+
+.service-body:hover .icon-ball svg path {
+    fill: #47aeff;
+}
+
+.service-body .icon-file i {
+    color: #ffa76e;
+}
+
+.service-body:hover .icon-file svg path {
+    fill: #ffa76e;
+}
+
+.service-body:hover i {
+    color: #f5f5f5;
+}
+
+.service-body h4 {
+    text-align: center;
+    font-size: 28px;
+    color: #1d425f;
+}
+
+.service-body p {
+    color: #444444;
+}
+
+.call h3 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.call p {
+    text-align: center;
+    color: #fff;
+    margin: 25px 0;
+}
+
+.call a {
+    display: table;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px 40px;
+    border-width: 3px;
+}
+
+.call a:hover {
+    color: #2487ce;
+}
+
+.portfolio .filter h5 {
+    text-align: center;
+}
+
+.portfolio-img {
+    position: relative;
+    transition: 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.portfolio-img::before {
+    content: "";
+    background-color: #2487ce80;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.portfolio-img:hover::before {
+    opacity: 1;
+}
+
+.portfolio-des {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 999;
+    transition: 0.3s ease;
+    flex-direction: column;
+}
+
+.portfolio-img:hover .portfolio-des {
+    opacity: 1;
+}
+
+.portfolio-img .portfolio-des::before {
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    width: 50px;
+    height: 50px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.portfolio-img .portfolio-des::after {
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    width: 50px;
+    height: 50px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.portfolio-des h4,
+.portfolio-des h5 {
+    color: #fff;
+}
+
+.portfolio-des .portfolio-links {
+    display: inline-block;
+}
+
+.portfolio-des a {
+    color: #fff;
+    font-size: 22px;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.portfolio-des a:hover {
+    opacity: 1;
+}
+
+.team-wrap {
+    background-color: #fff;
+    position: relative;
+}
+
+.team img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.team-wrap .team-links {
+    background-color: #fff;
+    opacity: 0;
+    position: absolute;
+    bottom: 87px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px 25px;
+    transition: 0.3s ease;
+}
+
+.team-wrap:hover .team-links {
+    opacity: 0.8;
+}
+
+.team-wrap .team-links a i {
+    font-size: 20px;
+    color: #124265;
+}
+
+.team-wrap .team-links a:hover i {
+    color: #2487ce;
+}
+
+.team-wrap h4 {
+    color: #124265;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.team-wrap h6 {
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pricing-box {
+    padding: 50px 30px;
+    border-radius: 5px;
+    background-color: #fefefe;
+    box-shadow: 0 0 29px 0 rgb(18 66 101 / 10%);
+}
+
+.pricing-box h3 {
+    text-align: center;
+    font-size: 22px;
+    color: #124265;
+}
+
+.pricing-box h5 {
+    text-align: center;
+    color: #aaa;
+    font-size: 17px;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+.pricing-box h5 sup {
+    color: #2487ce;
+    font-size: 25px;
+}
+
+.pricing-box h5 span {
+    color: #2487ce;
+    font-size: 40px;
+}
+
+.pricing-box p {
+    text-align: center;
+    font-size: 15px;
+    color: #16507b;
+}
+
+.pricing-box p del {
+    color: #ccc;
+}
+
+.pricing-box a {
+    border: 2px solid #2487ce;
+    color: #2487ce;
+    padding: 10px 40px;
+    display: table;
+    margin: 50px auto 0 auto;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.pricing-box a:hover {
+    background-color: #2487ce;
+    color: #fff;
+}
+
+.pricing-box.box-center {
+    background-color: #2487ce;
+}
+
+.pricing-box.box-center h3,
+.pricing-box.box-center h5,
+.pricing-box.box-center h5 span,
+.pricing-box.box-center h5 sup,
+.pricing-box.box-center p del,
+.pricing-box.box-center p {
+    color: #fff;
+}
+
+.pricing-box.box-center a {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.pricing-box a:hover {
+    background-color: #fff;
+    color: #2487ce;
+}
+
+#accordion {
+    margin: 20px 50px;
+}
+
+#accordion .card {
+    margin-bottom: 20px;
+    border: none;
+    padding: 15px;
+}
+
+#accordion .card-header {
+    border: none;
+}
+
+#accordion .card-header a {
+    display: block;
+    color: #2487ce;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#accordion .card-header a.collapsed {
+    color: #4c4d4f;
+}
+
+#accordion .card-header a:hover {
+    color: #2487ce;
+}
+
+#accordion .card-body {
+    padding-top: 0;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info .col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info i {
+    font-size: 22px;
+    color: #2487ce;
+    background-color: #2487ce33;
+    padding: 18px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.contact-info:hover i {
+    background-color: #2487ce;
+    color: #fff;
+}
+
+.contact-info h3 {
+    color: #124265;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-info h5 {
+    font-size: 16px;
+    color: #2487ce;
+}
+
+.contact-form input {
+    padding: 23px;
+}
+
+.contact-form button {
+    background-color: #2487ce;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 15px;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+.footer-about h3 {
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+.footer-about h6,
+.footer-about p {
+    color: #777;
+    font-size: 15px;
+}
+
+.footer-links h5 {
+    color: #1d425f;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.footer-links ul li {
+    margin: 12px 0;
+}
+
+.footer-links ul li a {
+    font-size: 15px;
+    color: #777;
+}
+
+.footer-links ul li a::before {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 15px;
+    color: #2487ce;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links ul li a:hover {
+    color: #2487ce;
+    text-decoration: none;
+}
+
+.footer-subs h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-subs form input {
+    border: 1px solid #2487ce44;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.footer-subs form input[type=email] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.footer-subs form input[type=submit] {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #2487ce;
+    color: #fff;
+}
+
+.footer-subs form input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+.footer-top {
+    padding: 60px 0;
+}
+
+.copyright p {
+    font-size: 15px;
+}
+
+footer {
+    box-shadow: 0 0 29px 0 rgb(18 66 101 / 8%);
+}
+
+.social-links a {
+    padding: 8px 13px;
+    margin: 0 3px;
+    background-color: #2487ce;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.social-links a:hover {
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    padding: 30px 0 10px 0;
+    background-color: #f8fbfe;
+}
